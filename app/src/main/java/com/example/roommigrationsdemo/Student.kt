@@ -14,8 +14,9 @@ data class Student(
     @ColumnInfo(name = "student_name")
     var name: String,
 
-    @ColumnInfo(name = "student_email", defaultValue = "No Email")
-    var email: String,
+//    Deleting this column
+//    @ColumnInfo(name = "student_email", defaultValue = "No Email")
+//    var email: String,
 
     // Handling null via safe call as we are not adding defaultValue
     @ColumnInfo(name = "subject_name")
