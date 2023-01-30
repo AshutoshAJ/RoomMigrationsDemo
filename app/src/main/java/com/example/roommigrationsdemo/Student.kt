@@ -18,6 +18,6 @@ data class Student(
     var email: String,
 
     // Handling null via safe call as we are not adding defaultValue
-    @ColumnInfo(name = "course_name")
+    @ColumnInfo(name = "subject_name")
     var course: String?
 )
