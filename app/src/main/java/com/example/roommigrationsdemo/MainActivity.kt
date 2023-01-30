@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             lifecycleScope.launch {
                 binding.editText.text.let {
-                    dao.insertStudent(Student(0, it.toString(), binding.editTextEmail.text.toString()))
+                    dao.insertStudent(Student(0, it.toString(), binding.editTextEmail.text.toString(), binding.editTextCourse.text.toString()))
                     binding.editText.setText("")
                     binding.editTextEmail.setText("")
+                    binding.editTextCourse.setText("")
                 }
             }
         }
